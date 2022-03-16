@@ -1,0 +1,350 @@
+
+// -------------------------------------------------
+// 　　　　　　　　　　全体構造
+// -------------------------------------------------
+
+
+
+@import 'settings.scss';
+
+body {
+  background-color: #180d0a;
+  color: #fff;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+}
+
+
+.english {
+  font-family: $english;
+}
+
+.japanese {
+  font-family: $japanese;
+}
+
+.text {
+  font-size: 25px;
+}
+
+
+
+
+// -------------- ローディングビデオ ----------------
+
+
+
+.hidden{
+  display: none;
+}
+#showloading {
+  width: 100%;
+  height: 100vh;
+  // background-color: $base-color;
+  position: relative;
+}
+#showloading  img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+// -------------- ヘッダー スクロール時 ----------------
+
+
+/* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
+header.scroll-nav {
+  /* 背景を変える */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  /* アニメーションの変化時間 */
+  transition: 0.5s;
+}
+
+
+
+// -------------- スライドショー ----------------
+
+.slider {
+  height: 100%;
+  margin: 0 auto 150px auto;
+  .hover-white {
+    transition: 0.5s ;
+  }
+  button {
+    display: none !important;  //絶対効いてね
+  }
+    .slider-text {
+      height: 70px;
+      padding-top: 50px;
+      text-align: center;
+  }
+}
+
+
+
+
+// -------------------------------------------------
+// 　　　　　　　　　　ヘッター
+// -------------------------------------------------
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  .nav-all {
+    @include space-between;
+    height: 100px;
+    align-items: center;
+    .nav-menu {
+      ul {
+        @include space-between;
+        width: 620px;
+        margin-right: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+      }
+      a:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+main {
+  .header-video {
+    
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      
+    }
+  }
+}
+
+
+
+// -------------------------------------------------
+// 　　　　　　　　　　メイン
+// -------------------------------------------------
+
+main {
+  .video-text {
+    position: relative;
+    top: -150px;
+    left: 0;
+    font-size: 150px;
+    text-align: center;
+    letter-spacing: 30px;
+    .video-text-top {
+      color: $main-color;
+    }
+    .video-text-under {
+      @include height-center (170px);
+      background-color: $main-color;
+      color: $base-color;
+      margin-bottom:140px;
+    }
+  }
+  .main-top {
+    h1 {
+      @include height-center (120px);
+      font-size: 60px;
+      text-align: center;
+      color: $base-color;
+      background-color: $main-color;
+      margin: 0 40px 50px 70px;
+      box-shadow: -30px -30px 0px 0 rgb(38, 35, 34);
+      letter-spacing: 4px;
+    }
+    .main-top-image {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 140px;
+      }
+    }
+  }
+}
+h2 {
+  color: $main-color;
+  margin-bottom: 17px;
+  letter-spacing: 4px;
+  span {
+    margin-right: 20px;
+    font-size: 40px;
+  }
+}
+
+// -------------- 自己紹介 ----------------
+main {
+  .members {
+    margin: 0 40px 182px 40px;
+    h2 {
+      i {
+          font-size: 74px;
+        }
+    }
+  p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+  }
+  .members-list {
+    @include space-between;
+    flex-wrap: wrap;
+    a {
+      height: 500px;
+    }
+    .menmbers-list-under {
+      @include space-between;
+      margin: 0 auto;
+      .miki {
+        margin-right: 60px;
+      }
+    }
+    .members-list-item {
+      a {
+        text-decoration: none;
+      }
+      image {
+        height: 400px;
+      }
+        img:hover {
+          opacity: 0.6;
+          transition: 0.5s;
+        }
+        .bg-line {
+          height: 80px;
+          background-image: url(../images/back-line.png);
+          background-repeat: no-repeat;
+          background-position: top;
+          margin-bottom: 40px;
+          p {
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 3.5px;
+            text-align: center;
+            padding-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// -------------- 先生へメッセージ ----------------
+
+.gift-message {
+  h2 {
+    margin-left: 40px;
+    i {
+      font-size: 50px;
+    }
+  }
+  p {
+    line-height: 1.6;
+    margin: 0 0 30px 40px;
+    letter-spacing: 4px;
+  }
+  .gift-message-image {
+    margin: 0 40px 180px 40px;
+    a {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+
+// -------------- 連絡先 ----------------
+
+.contact {
+  margin-bottom: 150px;
+  h2 {
+    margin-left: 40px;
+    i {
+      font-size: 55px;
+    }
+  }
+  p {
+    line-height: 1.6;
+    margin: 0 0 30px 40px;
+    letter-spacing: 4px;
+  }
+  ul {
+    @include space-between;
+    margin: 0 40px 0 40px;
+    li {
+      @include space-between;
+      height: 80px;
+      width: 620px;
+      font-size: 30px;
+      list-style-type: none;
+      align-items: flex-end;
+      line-height: 1.6;
+      border-bottom: 1px solid $main-color;
+      padding: 0 20px;
+      .icons {
+        a {
+          .mail {
+            margin-right: 10px;
+          }
+          img {
+            padding-bottom: 5px;
+          }
+        }
+        a:hover {
+          opacity: 0.6;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// -------------------------------------------------
+// 　　　　　　　　　　フッター
+// -------------------------------------------------
+
+footer {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  small {
+    @include height-center(50px);
+    display: block;
+    background-color: $main-color;
+    p {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

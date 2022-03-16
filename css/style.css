@@ -1,0 +1,348 @@
+@charset "UTF-8";
+body {
+  background-color: #180d0a;
+  color: #fff;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+}
+
+.english {
+  font-family: "Rammetto One", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.japanese {
+  font-family: "RocknRoll One", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.text {
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+#showloading {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#showloading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* スクロールして「scroll-navクラス」がついたときのヘッダーデザイン */
+header.scroll-nav {
+  /* 背景を変える */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  /* アニメーションの変化時間 */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slider {
+  height: 100%;
+  margin: 0 auto 150px auto;
+}
+
+.slider .hover-white {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slider button {
+  display: none !important;
+}
+
+.slider .slider-text {
+  height: 70px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+header .nav-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-all .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 620px;
+  margin-right: 40px;
+}
+
+header .nav-all .nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+header .nav-all .nav-menu a:hover {
+  color: #d87514;
+}
+
+main .header-video video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .video-text {
+  position: relative;
+  top: -150px;
+  left: 0;
+  font-size: 150px;
+  text-align: center;
+  letter-spacing: 30px;
+}
+
+main .video-text .video-text-top {
+  color: #d87514;
+}
+
+main .video-text .video-text-under {
+  line-height: 170px;
+  height: 170px;
+  background-color: #d87514;
+  color: #180d0a;
+  margin-bottom: 140px;
+}
+
+main .main-top h1 {
+  line-height: 120px;
+  height: 120px;
+  font-size: 60px;
+  text-align: center;
+  color: #180d0a;
+  background-color: #d87514;
+  margin: 0 40px 50px 70px;
+  -webkit-box-shadow: -30px -30px 0px 0 #262322;
+          box-shadow: -30px -30px 0px 0 #262322;
+  letter-spacing: 4px;
+}
+
+main .main-top .main-top-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 140px;
+}
+
+h2 {
+  color: #d87514;
+  margin-bottom: 17px;
+  letter-spacing: 4px;
+}
+
+h2 span {
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+main .members {
+  margin: 0 40px 182px 40px;
+}
+
+main .members h2 i {
+  font-size: 74px;
+}
+
+main .members p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+
+main .members .members-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .members .members-list a {
+  height: 500px;
+}
+
+main .members .members-list .menmbers-list-under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+main .members .members-list .menmbers-list-under .miki {
+  margin-right: 60px;
+}
+
+main .members .members-list .members-list-item a {
+  text-decoration: none;
+}
+
+main .members .members-list .members-list-item image {
+  height: 400px;
+}
+
+main .members .members-list .members-list-item img:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .members .members-list .members-list-item .bg-line {
+  height: 80px;
+  background-image: url(../images/back-line.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 40px;
+}
+
+main .members .members-list .members-list-item .bg-line p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 3.5px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.gift-message h2 {
+  margin-left: 40px;
+}
+
+.gift-message h2 i {
+  font-size: 50px;
+}
+
+.gift-message p {
+  line-height: 1.6;
+  margin: 0 0 30px 40px;
+  letter-spacing: 4px;
+}
+
+.gift-message .gift-message-image {
+  margin: 0 40px 180px 40px;
+}
+
+.gift-message .gift-message-image a img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+
+.contact h2 {
+  margin-left: 40px;
+}
+
+.contact h2 i {
+  font-size: 55px;
+}
+
+.contact p {
+  line-height: 1.6;
+  margin: 0 0 30px 40px;
+  letter-spacing: 4px;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 40px 0 40px;
+}
+
+.contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  width: 620px;
+  font-size: 30px;
+  list-style-type: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  line-height: 1.6;
+  border-bottom: 1px solid #d87514;
+  padding: 0 20px;
+}
+
+.contact ul li .icons a .mail {
+  margin-right: 10px;
+}
+
+.contact ul li .icons a img {
+  padding-bottom: 5px;
+}
+
+.contact ul li .icons a:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer small {
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  background-color: #d87514;
+}
+
+footer small p {
+  text-align: center;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

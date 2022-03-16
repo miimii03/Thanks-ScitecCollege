@@ -1,0 +1,18 @@
+
+$english : 'Rammetto One', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+$japanese : 'RocknRoll One','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+$base-color : #180d0a;
+$main-color : #d87514;
+$shadow : #262322;
+
+@mixin height-center($height) {
+  line-height: $height;
+  height: $height;
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+}
